@@ -6,11 +6,13 @@ class DestinationCard extends StatelessWidget {
   final String name;
   final String speed;
   final String distance;
+  Function() onTap;
 
-  const DestinationCard({
+   DestinationCard({
     required this.name,
     required this.speed,
     required this.distance,
+    required this.onTap
   });
 
   @override
@@ -36,7 +38,11 @@ class DestinationCard extends StatelessWidget {
                 Text(" $speed"),
                 
                 Text("$distance"),
-               SvgPicture.asset("assets/minus.svg",width: 20,)
+               InkWell(
+                onTap: (){
+                  onTap();
+                },
+                child: SvgPicture.asset("assets/minus.svg",width: 20,))
           ],
         ),
       ),
