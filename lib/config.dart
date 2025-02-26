@@ -1,5 +1,5 @@
 class AppConfig{
-  static final String api_key = "AIzaSyCSIYAsLpxqha0ygN1ybaIeoUF6uTLFh9E";
+  static final String api_key = "";
   static final String auto_complete_url = "https://maps.googleapis.com/maps/api/place/autocomplete/json";
    static Map<String,dynamic> sample_data = {
    "predictions" : 
