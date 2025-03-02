@@ -1,7 +1,6 @@
-sealed class AutoModel{}
 
 
-class ErrorModel extends AutoModel{
+class ErrorModel{
   final String message;
 
   ErrorModel({required this.message});
@@ -13,7 +12,7 @@ class ErrorModel extends AutoModel{
   }
 }
 
-class AutoCompleteModel extends AutoModel{
+class AutoCompleteModel{
   List<Predictions>? predictions;
   String? status;
 
